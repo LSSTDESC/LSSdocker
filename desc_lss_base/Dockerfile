@@ -21,7 +21,7 @@ RUN apt-get install -y git
 RUN apt-get install -y libgsl-dev
 RUN apt-get install -y libcfitsio-dev
 RUN apt-get install -y libtool
-
+RUN apt-get install -y libhdf5-dev
 ## add user
 RUN useradd -ms /bin/bash lss
 

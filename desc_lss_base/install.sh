@@ -76,3 +76,16 @@ chmod +x runCoLoRe
 make -f Makefile.CoLoRe
 export LD_LIBRARY_PATH=/home/lss/local/lib >>$HOME/.bashrc
 
+git clone https://github.com/slosar/fastcat.git
+cd fastcat
+python setup.py install --user
+cd ..
+
+git clone https://github.com/damonge/NaMaster.git
+
+git clone https://github.com/LSSTDESC/sacc.git
+cd sacc
+python setup.py install --user
+cd ..
+
+
