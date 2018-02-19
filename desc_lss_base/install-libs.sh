@@ -62,3 +62,5 @@ make
 cp auto/include/* /home/lss/local/include
 cp auto/lib/* /home/lss/local/lib
 cd ..
+
+rm -rf /home/lss/src
