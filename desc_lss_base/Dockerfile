@@ -27,6 +27,7 @@ RUN 		mkdir /build/ && \
 		rm -rf /build/ && \
 		/sbin/ldconfig
 #&& \
+## for some crazy reaoson, this needs to be run separately.
 RUN             pip install --upgrade pip && \
 		pip install future && \
 		pip install scipy matplotlib numpy nose pyyaml emcee h5py && \

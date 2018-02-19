@@ -5,15 +5,8 @@ FROM desc_lss_base
 
 ## Now the actual libraries that will change more often
 WORKDIR /home/lss
+COPY install-software.sh scripts/Makefile.CoLoRe scripts/runCoLoRe /home/lss/
+USER root
+RUN chown lss Makefile.CoLoRe runCoLoRe
 USER lss
-COPY install-software.sh .
-COPY scripts/Makefile.CoLoRe .
-COPY scripts/runCoLoRe .
 RUN bash /home/lss/install-software.sh
-
-
-
-
-
-
-
